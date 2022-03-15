@@ -1,7 +1,7 @@
 FROM TheMafiaBot/MAFIA-USERBOT:alpine
 
 #clonning repo 
-RUN git clone https://github.com/TheMafiaBot/MafiaBot.git /root/userbot
+RUN git clone https://github.com/amaninamdar09/MAFIA-USERBOT.git /root/userbot
 #working directory 
 WORKDIR /root/userbot
 
