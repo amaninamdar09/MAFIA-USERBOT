@@ -163,9 +163,9 @@ async def promote(promt):
 
 
 @bot.on(admin_cmd("promote2(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="promote(?: |$)(.*)", allow_sudo=True))
+@bot.on(sudo_cmd(pattern="promote2(?: |$)(.*)", allow_sudo=True))
 @errors_handler
-async def promote(promt):
+async def promote2(promt):
     if promt.fwd_from:
         return
     chat = await promt.get_chat()
@@ -205,9 +205,9 @@ async def promote(promt):
 
 
 @bot.on(admin_cmd("promote3(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="promote(?: |$)(.*)", allow_sudo=True))
+@bot.on(sudo_cmd(pattern="promote3(?: |$)(.*)", allow_sudo=True))
 @errors_handler
-async def promote(promt):
+async def promote3(promt):
     if promt.fwd_from:
         return
     chat = await promt.get_chat()
@@ -247,9 +247,9 @@ async def promote(promt):
 
 
 @bot.on(admin_cmd("promote4(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="promote(?: |$)(.*)", allow_sudo=True))
+@bot.on(sudo_cmd(pattern="promote4(?: |$)(.*)", allow_sudo=True))
 @errors_handler
-async def promote(promt):
+async def promote4(promt):
     if promt.fwd_from:
         return
     chat = await promt.get_chat()
@@ -289,9 +289,9 @@ async def promote(promt):
 
 
 @bot.on(admin_cmd("fullpromote(?: |$)(.*)"))
-@bot.on(sudo_cmd(pattern="promote(?: |$)(.*)", allow_sudo=True))
+@bot.on(sudo_cmd(pattern="fullpromote(?: |$)(.*)", allow_sudo=True))
 @errors_handler
-async def promote(promt):
+async def fullpromote(promt):
     if promt.fwd_from:
         return
     chat = await promt.get_chat()
