@@ -1,13 +1,13 @@
 from asyncio import sleep
 
-from userbot import lionub
+from userbot import mafiabot
 from userbot.funcs.logger import logging
 
 plugin_category = "tools"
 LOGS = logging.getLogger(__name__)
 
 
-@lionub.lion_cmd(
+@mafiabot.mafia_cmd(
     pattern=r"sdm (\d*) ([\s\S]*)",
     command=("sdm", plugin_category),
     info={
@@ -19,7 +19,7 @@ LOGS = logging.getLogger(__name__)
 )
 async def selfdestruct(destroy):
     "To self destruct the sent message"
-    lion = ("".join(destroy.text.split(maxsplit=1)[1:])).split(" ", 1)
+    mafia = ("".join(destroy.text.split(maxsplit=1)[1:])).split(" ", 1)
     message = lion[1]
     ttl = int(lion[0])
     await destroy.delete()
@@ -28,7 +28,7 @@ async def selfdestruct(destroy):
     await smsg.delete()
 
 
-@lionub.lion_cmd(
+@mafiabot.mafia_cmd(
     pattern=r"selfdm (\d*) ([\s\S]*)",
     command=("selfdm", plugin_category),
     info={
@@ -40,9 +40,9 @@ async def selfdestruct(destroy):
 )
 async def selfdestruct(destroy):
     "To self destruct the sent message"
-    lion = ("".join(destroy.text.split(maxsplit=1)[1:])).split(" ", 1)
-    message = lion[1]
-    ttl = int(lion[0])
+    mafia = ("".join(destroy.text.split(maxsplit=1)[1:])).split(" ", 1)
+    message = mafia[1]
+    ttl = int(mafia[0])
     text = message + f"\n\n`This message shall be self-destructed in {ttl} seconds`"
 
     await destroy.delete()
@@ -51,7 +51,7 @@ async def selfdestruct(destroy):
     await smsg.delete()
 
 
-@lionub.lion_cmd(
+@mafiabot.mafia_cmd(
     pattern="slfchk$",
     command=("slfchk", plugin_category),
     info={
@@ -66,5 +66,5 @@ async def oho(event):
         return await event.edit("Reply to a self distructing pic !.!.!")
     k = await event.get_reply_message()
     pic = await k.download_media()
-    await lionub.send_file("me", pic)
+    await mafiabot.send_file("me", pic)
     await event.delete()
