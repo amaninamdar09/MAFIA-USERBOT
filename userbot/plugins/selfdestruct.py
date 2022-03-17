@@ -1,6 +1,6 @@
 from asyncio import sleep
 
-from userbot import mafia
+from userbot import mafiabot
 from userbot.funcs.logger import logging
 
 plugin_category = "tools"
