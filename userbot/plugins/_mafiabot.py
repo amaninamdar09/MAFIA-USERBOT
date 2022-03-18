@@ -1,4 +1,4 @@
-"""mafiaBot Help Command"""
+"""PANTHERS BOT Help Command"""
 
 from . import *
 from userbot import CMD_HELP
