@@ -3,7 +3,7 @@
 	Usage : .anilist animeName	
 	By :- @Zero_cool7870	
 """
-
+# special thanks HIMANSHU
 import json
 import re
 
