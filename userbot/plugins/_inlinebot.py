@@ -98,7 +98,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.text=='':
             result = builder.article(
                 "@BLACKPANTHERSBOLTE",
-                text=f"""**Hey![🤗]({mafia_help_pic}) This is [𝙿𝙰𝙽𝚃𝙷𝙴𝚁𝚂 𝙱𝙾𝚃](https://t.me/BLACKPANTHERSOP)\nYou can know more about me from the links given below 👇🏻**""",
+                text=f"""**Hey![😗]({mafia_help_pic}) This is [𝙿𝙰𝙽𝚃𝙷𝙴𝚁𝚂 𝙱𝙾𝚃](https://t.me/BLACKPANTHERSOP)\nYou can know more about me from the links given below 👇🏻**""",
                 buttons=[
                     [
                         custom.Button.url("⚡ CHANNEL ⚡", "https://t.me/BLACKPANTHERSOP"),
