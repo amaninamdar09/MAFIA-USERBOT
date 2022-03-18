@@ -130,7 +130,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF PANTHERS BOT[⚡🔥]({mafia_help_pic})[.](https://t.me/BLACKPANTHERSOP) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**𝙻𝚎𝚐𝚎𝚗𝚍𝚊𝚢 𝙰𝙵 𝙿𝙰𝙽𝚃𝙷𝙴𝚁𝚂 𝙱𝙾𝚃[⚡🔥]({mafia_help_pic})[.](https://t.me/BLACKPANTHERSOP) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=True,
         )
