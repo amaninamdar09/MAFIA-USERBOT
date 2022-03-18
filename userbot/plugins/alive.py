@@ -1,6 +1,4 @@
-
-# Thanks to @D3_krish
-# Porting in MafiaBot by @H1M4N5HU0P
+# Porting in Panthers Bot by @DANISH_BABA
 
 import asyncio
 import random
@@ -24,7 +22,7 @@ else:
 mafia = bot.uid
 
 MAFIA_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/e97d640332ce5eadb3f89.mp4"
-pm_caption = "  __**💥 𝐌𝐀𝐅𝐈𝐀 𝐁𝐎𝐓 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 💥**__\n\n"
+pm_caption = "  __**💥 𝐏𝐀𝐍𝐓𝐇𝐄𝐑𝐒 𝐁𝐎𝐓 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 💥**__\n\n"
 
 pm_caption += f"**━━━━━━━━━━━━━━━━━━**\n\n"
 pm_caption += (
