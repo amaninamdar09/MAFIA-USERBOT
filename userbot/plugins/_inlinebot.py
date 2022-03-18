@@ -15,7 +15,7 @@
 #    This Inline Helper Code is solely owned by @SupRemE_AnanD
 #    You Should Not Copy This Code Without Proper Permission.
 
-# Help Pic feature added by @H1M4N5HU0P
+# Help Pic feature added by @DANISH_BABA
 
 from math import ceil
 from re import compile
@@ -30,7 +30,7 @@ from userbot.cmdhelp import *
 from mafiabot.utils import *
 from userbot.Config import Config
 
-mafia_help_pic = Config.HELP_PIC or "https://telegra.ph/file/f6a46c6251bb8a5bea300.mp4"
+mafia_help_pic = Config.HELP_PIC or "https://te.legra.ph/file/2170a01530817683e8bf6.jpg"
 mafia_row = Config.BUTTONS_IN_HELP
 mafia_emoji = Config.EMOJI_IN_HELP
 # thats how a lazy guy imports
@@ -69,7 +69,7 @@ def button(page, modules):
         ]
     )
     return [max_pages, buttons]
-    # Changing this line may give error in bot as i added some special cmds in MafiaBot channel to get this module work...
+    # Changing this line may give error in bot as i added some special cmds in PanthersBot channel to get this module work...
 
     modules = CMD_HELP
 if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
@@ -78,12 +78,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query == "@MafiaBot_Support":
+        if event.query.user_id == bot.uid and query == "@BLACKPANTHERSBOLTE":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running MafiaBot**[⚡🔥]({mafia_help_pic})\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Running** 𝐏𝐀𝐍𝐓𝐇𝐄𝐑𝐒 𝐁𝐎𝐓[⚡🔥]({mafia_help_pic})\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=True,
             )
@@ -97,21 +97,21 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             )
         elif event.text=='':
             result = builder.article(
-                "@MafiaBot_Support",
-                text=f"""**Hey![🤗]({mafia_help_pic}) This is [MafiaBot.](https://t.me/MafiaBot_Support)\nYou can know more about me from the links given below 👇**""",
+                "@BLACKPANTHERSBOLTE",
+                text=f"""**Hey![🤗]({mafia_help_pic}) This is [𝙿𝙰𝙽𝚃𝙷𝙴𝚁𝚂 𝙱𝙾𝚃](https://t.me/BLACKPANTHERSOP)\nYou can know more about me from the links given below 👇🏻**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/MafiaBot_Support"),
+                        custom.Button.url("⚡ CHANNEL ⚡", "https://t.me/BLACKPANTHERSOP"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/MafiaBot_Chit_Chat"
+                            "⚡ GROUP ⚡", "https://t.me/BLACKPANTHERSBOLTE"
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/MafiaBotOP/MafiaBot"),
+                            "✨ REPO ✨", "https://github.com/OPBLACKPANTHERS/BLACK-PANTHERs-BOT"),
                         custom.Button.url
                     (
-                            "🔰 TUTORIAL 🔰", "https://youtu.be/aRFWP4_RCaE"
+                            "🔰 TUTORIAL 🔰", "https://youtu.be/"
                     )
                     ],
                 ],
@@ -123,14 +123,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE. © MafiaBot ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN PANTHERS BOT AND USE. © BLACKPANTHERS ™",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF MafiaBot[⚡🔥]({mafia_help_pic})[.](https://t.me/MafiaBot_Support) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legenday AF PANTHERS BOT[⚡🔥]({mafia_help_pic})[.](https://t.me/BLACKPANTHERSOP) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=True,
         )
@@ -138,9 +138,9 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
-            await event.edit(f"⚜️MafiaBot Menu Provider Is now Closed[⚜️]({mafia_help_pic})\n\n         **[© MafiaBot ™](t.me/MafiaBot_Support)**[⚡🔥]({mafia_help_pic})", 5, link_preview=True)
+            await event.edit(f"⚜️PANTHERS BOT Menu Provider Is now Closed[⚜️]({mafia_help_pic})\n\n         **[© MafiaBot ™](t.me/MafiaBot_Support)**[⚡🔥]({mafia_help_pic})", 5, link_preview=True)
         else:
-            mafia_alert = "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE. © MafiaBot ™"
+            mafia_alert = "HELLO THERE. PLEASE MAKE YOUR OWN [𝙿𝙰𝙽𝚃𝙷𝙴𝚁𝚂 𝙱𝙾𝚃](https://github.com/OPBLACKPANTHERS/BLACK-PANTHERs-BOT) AND USE. © BLACKPANTHERS ™"
             await event.answer(mafia_alert, cache_time=0, alert=True)
           
     @tgbot.on(
@@ -149,7 +149,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE. © MafiaBot ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN [𝙿𝙰𝙽𝚃𝙷𝙴𝚁𝚂 𝙱𝙾𝚃](https://github.com/OPBLACKPANTHERS/BLACK-PANTHERs-BOT) AND USE. © BLACKPANTHERS ™",
                 cache_time=0,
                 alert=True,
             )
@@ -182,7 +182,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN MAFIABOT AND USE. © MafiaBot ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN [𝙿𝙰𝙽𝚃𝙷𝙴𝚁𝚂 𝙱𝙾𝚃](https://github.com/OPBLACKPANTHERS/BLACK-PANTHERs-BOT) AND USE. © BLACKPANTHERS ™",
                 cache_time=0,
                 alert=True,
             )
