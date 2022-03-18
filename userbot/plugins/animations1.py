@@ -144,8 +144,8 @@ async def _(event):
     animation_chars = [
         "`Connecting To Raj Bhawan`",
         "`Call Connected.`",
-        "`Secretary: mafiao This is Raj Bhawan. Who is this?`",
-        f"`Me: mafiao this is` `{DEFAULUSER}` .Please connect me to Prime Minister",
+        "`Secretary: PANTHERS This is Raj Bhawan. Who is this?`",
+        f"`Me: PANTHERS this is` `{DEFAULUSER}` .Please connect me to Prime Minister",
         "`User Authorised.`",
         "`Calling`  `At +9189*#*#*#56`",
         "`Private  Call Connected...`",
