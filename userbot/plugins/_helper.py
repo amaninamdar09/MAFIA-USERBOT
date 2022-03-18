@@ -63,7 +63,7 @@ async def info(event):
                 .get("key")
             )
             url = f"https://nekobin.com/{key}"
-            reply_text = f"All commands of the MafiaBot are [here]({url})"
+            reply_text = f"All commands of the 𝙿𝙰𝙽𝚃𝙷𝙴𝚁𝚂 𝙱𝙾𝚃 are [here]({url})"
             await event.reply(reply_text, link_preview=False)
             return
         await event.reply(
