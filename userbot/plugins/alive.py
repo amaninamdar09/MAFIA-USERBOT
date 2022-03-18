@@ -35,7 +35,7 @@ pm_caption += f"┣•➳➠ `Sudo:` `{sudou}`\n"
 pm_caption += f"┣•➳➠ `𝐂𝐑𝐄𝐀𝐓𝐄𝐑:`\n [𝐇𝐈𝐌𝐀𝐍𝐒𝐇𝐔 𝐎𝐏](https://t.me/H1M4N5HU0P)\n"
 pm_caption += f"┣•➳➠ `𝐎𝐖𝐍𝐄𝐑:`\n [𖤍 𝐃𝐀𝐍𝐈𝐒𝐇 𝐁𝐀𝐁𝐀 𖤍](https://t.me/DANISH_BABA)\n"
 pm_caption += f"┗━━━━━━━━━━━━━━━━━━\n"
-pm_caption += " [✨𝙼𝚈 𝙶𝚁𝙾𝚄𝙿✨](https://t.me/WEFRIENDSCIRCLE) 🔹 [🔰𝚁𝙴𝙿𝙾🔰](https://github.com/MafiaBotOP/MafiaBot)"
+pm_caption += " [✨𝙼𝚈 𝙶𝚁𝙾𝚄𝙿✨](https://t.me/WEFRIENDSCIRCLE) 🔹 [🔰𝚁𝙴𝙿𝙾🔰]([𝙿𝙰𝙽𝚃𝙷𝙴𝚁𝚂 𝙱𝙾𝚃](https://github.com/OPBLACKPANTHERS/BLACK-PANTHERs-BOT))"
 
 # @command(outgoing=True, pattern="^.alive$")
 @bot.on(admin_cmd(outgoing=True, pattern="alive$"))
