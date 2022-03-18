@@ -10,7 +10,7 @@ from userbot.cmdhelp import CmdHelp
 from userbot.Config import Config
 from . import *
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𝕄𝔸𝔽𝕀𝔸𝔹𝕆𝕋"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℙ𝔸ℕ𝕋ℍ𝔼ℝ𝕊 𝔹𝕆𝕋"
 
 ludosudo = Config.SUDO_USERS
 
@@ -21,7 +21,7 @@ else:
 
 mafia = bot.uid
 
-MAFIA_IMG = Config.ALIVE_PIC or "https://telegra.ph/file/e97d640332ce5eadb3f89.mp4"
+MAFIA_IMG = Config.ALIVE_PIC or "https://te.legra.ph/file/359239940ea92c823021c.jpg"
 pm_caption = "  __**💥 𝐏𝐀𝐍𝐓𝐇𝐄𝐑𝐒 𝐁𝐎𝐓 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 💥**__\n\n"
 
 pm_caption += f"**━━━━━━━━━━━━━━━━━━**\n\n"
