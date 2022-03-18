@@ -1,5 +1,5 @@
 # by unibot...Thanks @spechide
-# Now will be used in MafiaBot too....
+# Now will be used in PANTHERS BOT too....
 import asyncio
 import datetime
 from datetime import datetime
@@ -12,7 +12,7 @@ from userbot.cmdhelp import CmdHelp
 from userbot.Config import Config
 from . import *
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Mafia User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "PANTHER User"
 
 mafia = bot.uid
 
@@ -45,7 +45,7 @@ async def set_not_afk(event):
     if ".afk" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
         mafiabot = await bot.send_message(
             event.chat_id,
-            "🔥__Back alive!__\n**No Longer afk.**\n⏱️ `Was afk for:``"
+            "🔥__I AM BACK!__\n**No Longer afk.**\n⏱️ `Was afk for:``"
             + total_afk_time
             + "`", file=mafiapic
         )
@@ -53,15 +53,15 @@ async def set_not_afk(event):
             await bot.send_message(  # pylint:disable=E0602
                 Config.MAFIABOT_LOGGER,  # pylint:disable=E0602
                 "#AFKFALSE \nSet AFK mode to False\n"
-                + "🔥__Back alive!__\n**No Longer afk.**\n⏱️ `Was afk for:``"
+                + "🔥__I AM BACK!__\n**No Longer afk.**\n⏱️ `Was afk for:``"
                 + total_afk_time
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             await bot.send_message(  # pylint:disable=E0602
                 event.chat_id,
-                "Please set `MAFIABOT_LOGGER` "
+                "Please set `PANTHERSBOT_LOGGER` "
                 + "for the proper functioning of afk functionality "
-                + "Ask in @MafiaBot_Chit_Chat to get help setting this value\n\n `{}`".format(str(e)),
+                + "Ask in @BLACKPANTHERSBOLTE to get help setting this value\n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True,
             )
@@ -98,7 +98,7 @@ async def on_afk(event):
         
         message_to_reply = (
             f"Hey!! My Legend master [{DEFAULTUSER}](tg://user?id={mafia}) is currently offline... Since when?\n**For** `{total_afk_time}`\n"
-            + f"\n\n👇__The Reason Is__👇 :-\n`{reason}`"
+            + f"\n\n👇🏻__The Reason Is__👇🏻 :-\n`{reason}`"
   if reason
             else f"**Heyy!**\n__I am currently unavailable.__\n__Since when, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶"
         )
